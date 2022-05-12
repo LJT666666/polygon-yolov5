@@ -1,0 +1,30 @@
+{
+    "os": "Linux-5.11.0-43-generic-x86_64-with-glibc2.17",
+    "python": "3.8.11",
+    "heartbeatAt": "2022-01-06T12:33:08.343583",
+    "startedAt": "2022-01-06T12:33:07.612254",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "cpu_count": 36,
+    "cuda": null,
+    "args": [
+        "--weights",
+        "",
+        "--noautoanchor",
+        "--polygon",
+        "--cache"
+    ],
+    "state": "running",
+    "program": "polygon_train.py",
+    "codePath": "polygon-yolov5/polygon_train.py",
+    "git": {
+        "remote": "https://hub.fastgit.org/XinzeLee/PolygonObjectDetection.git",
+        "commit": "d5926bbce24f40f394a663d0a147f9608e922f21"
+    },
+    "email": null,
+    "root": "/home/zq/PolygonObjectDetection",
+    "host": "server501",
+    "username": "zq",
+    "executable": "/home/zq/.conda/envs/yolo/bin/python"
+}

@@ -1,0 +1,3 @@
+# ninja log v5
+1	11939	1641373476694582349	/home/zq/PolygonObjectDetection/polygon-yolov5/utils/iou_cuda/build/temp.linux-x86_64-3.8/inter_union_cuda.o	6126ec70327baf39
+0	15997	1641373480758577028	/home/zq/PolygonObjectDetection/polygon-yolov5/utils/iou_cuda/build/temp.linux-x86_64-3.8/extensions.o	59f1ca4422ada272

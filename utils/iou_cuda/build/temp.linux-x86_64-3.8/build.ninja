@@ -1,0 +1,29 @@
+ninja_required_version = 1.3
+cxx = c++
+nvcc = /usr/local/cuda-11.3/bin/nvcc
+
+cflags = -pthread -B /home/zq/.conda/envs/yolo/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/include -I/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/include/TH -I/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda-11.3/include -I/home/zq/.conda/envs/yolo/include/python3.8 -c
+post_cflags = -std=c++14 -O2 -Wall -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=polygon_inter_union_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+cuda_cflags = -I/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/include -I/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/include/TH -I/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda-11.3/include -I/home/zq/.conda/envs/yolo/include/python3.8 -c
+cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -std=c++14 --expt-extended-lambda --use_fast_math -Xcompiler -Wall,-fno-gnu-unique -gencode=arch=compute_37,code=sm_37 -gencode=arch=compute_60,code=sm_60 -gencode=arch=compute_61,code=sm_61 -gencode=arch=compute_70,code=sm_70 -gencode=arch=compute_72,code=sm_72 -gencode=arch=compute_75,code=sm_75 -gencode=arch=compute_80,code=sm_80 -gencode=arch=compute_86,code=sm_86 -gencode=arch=compute_86,code=compute_86 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=polygon_inter_union_cuda -D_GLIBCXX_USE_CXX11_ABI=0
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  depfile = $out.d
+  deps = gcc
+  command = $nvcc  $cuda_cflags -c $in -o $out $cuda_post_cflags
+
+
+
+build /home/zq/PolygonObjectDetection/polygon-yolov5/utils/iou_cuda/build/temp.linux-x86_64-3.8/extensions.o: compile /home/zq/PolygonObjectDetection/polygon-yolov5/utils/iou_cuda/extensions.cpp
+build /home/zq/PolygonObjectDetection/polygon-yolov5/utils/iou_cuda/build/temp.linux-x86_64-3.8/inter_union_cuda.o: cuda_compile /home/zq/PolygonObjectDetection/polygon-yolov5/utils/iou_cuda/inter_union_cuda.cu
+
+
+
+
+

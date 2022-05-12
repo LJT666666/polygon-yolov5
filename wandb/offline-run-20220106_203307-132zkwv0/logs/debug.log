@@ -1,0 +1,33 @@
+2022-01-06 20:33:07,614 INFO    MainThread:255127 [wandb_setup.py:_flush():71] setting env: {}
+2022-01-06 20:33:07,614 INFO    MainThread:255127 [wandb_setup.py:_flush():71] setting login settings: {}
+2022-01-06 20:33:07,614 INFO    MainThread:255127 [wandb_setup.py:_flush():71] setting login settings: {'mode': 'offline'}
+2022-01-06 20:33:07,614 INFO    MainThread:255127 [wandb_init.py:_log_setup():357] Logging user logs to /home/zq/PolygonObjectDetection/polygon-yolov5/wandb/offline-run-20220106_203307-132zkwv0/logs/debug.log
+2022-01-06 20:33:07,614 INFO    MainThread:255127 [wandb_init.py:_log_setup():358] Logging internal logs to /home/zq/PolygonObjectDetection/polygon-yolov5/wandb/offline-run-20220106_203307-132zkwv0/logs/debug-internal.log
+2022-01-06 20:33:07,614 INFO    MainThread:255127 [wandb_init.py:init():390] calling init triggers
+2022-01-06 20:33:07,614 INFO    MainThread:255127 [wandb_init.py:init():395] wandb.init called with sweep_config: {}
+config: {'weights': '', 'cfg': './models/polygon_yolov5s_armor.yaml', 'data': 'data/polygon_armor.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.1, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 30.0, 'translate': 0.1, 'scale': 0.0, 'shear': 5.0, 'perspective': 0.0005, 'flipud': 0.5, 'fliplr': 0.5, 'mosaic': 0.0, 'mixup': 0.0}, 'epochs': 2000, 'batch_size': 40, 'img_size': [640, 640], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': True, 'evolve': False, 'bucket': '', 'cache_images': True, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'polygon': True, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs/train/exp2', 'total_batch_size': 40}
+2022-01-06 20:33:07,614 INFO    MainThread:255127 [wandb_init.py:init():435] starting backend
+2022-01-06 20:33:07,615 INFO    MainThread:255127 [backend.py:_multiprocessing_setup():95] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-01-06 20:33:07,627 INFO    MainThread:255127 [backend.py:ensure_launched():199] starting backend process...
+2022-01-06 20:33:07,636 INFO    MainThread:255127 [backend.py:ensure_launched():204] started backend process with pid: 255215
+2022-01-06 20:33:07,637 INFO    MainThread:255127 [wandb_init.py:init():444] backend started and connected
+2022-01-06 20:33:07,641 INFO    MainThread:255127 [wandb_init.py:init():503] updated telemetry
+2022-01-06 20:33:07,673 INFO    MainThread:255127 [wandb_init.py:init():576] starting run threads in backend
+2022-01-06 20:33:10,416 INFO    MainThread:255127 [wandb_run.py:_console_start():1693] atexit reg
+2022-01-06 20:33:10,416 INFO    MainThread:255127 [wandb_run.py:_redirect():1567] redirect: SettingsConsole.REDIRECT
+2022-01-06 20:33:10,417 INFO    MainThread:255127 [wandb_run.py:_redirect():1572] Redirecting console.
+2022-01-06 20:33:10,419 INFO    MainThread:255127 [wandb_run.py:_redirect():1628] Redirects installed.
+2022-01-06 20:33:10,419 INFO    MainThread:255127 [wandb_init.py:init():603] run started, returning control to user process
+2022-01-06 20:33:10,421 INFO    MainThread:255127 [wandb_run.py:_config_callback():911] config_cb None None {'weights': '', 'cfg': './models/polygon_yolov5s_armor.yaml', 'data': 'data/polygon_armor.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.1, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 30.0, 'translate': 0.1, 'scale': 0.0, 'shear': 5.0, 'perspective': 0.0005, 'flipud': 0.5, 'fliplr': 0.5, 'mosaic': 0.0, 'mixup': 0.0}, 'epochs': 2000, 'batch_size': 40, 'img_size': [640, 640], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': True, 'evolve': False, 'bucket': '', 'cache_images': True, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'polygon': True, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs/train/exp2', 'total_batch_size': 40}
+2022-01-06 20:33:10,422 INFO    MainThread:255127 [wandb_config.py:__setitem__():144] config set data_dict = {'train': '../armor293/train.txt', 'val': '../armor293/val.txt', 'nc': 1, 'names': ['armor']} - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f9a99850040>>
+2022-01-06 20:33:10,423 INFO    MainThread:255127 [wandb_run.py:_config_callback():911] config_cb data_dict {'train': '../armor293/train.txt', 'val': '../armor293/val.txt', 'nc': 1, 'names': ['armor']} None
+2022-01-06 20:33:10,639 INFO    MainThread:255127 [wandb_run.py:_atexit_cleanup():1663] got exitcode: 1
+2022-01-06 20:33:10,639 INFO    MainThread:255127 [wandb_run.py:_restore():1635] restore
+2022-01-06 20:33:12,964 INFO    MainThread:255127 [wandb_run.py:_wait_for_finish():1793] got exit ret: 
+2022-01-06 20:33:13,151 INFO    MainThread:255127 [wandb_run.py:_wait_for_finish():1793] got exit ret: 
+2022-01-06 20:33:13,254 INFO    MainThread:255127 [wandb_run.py:_wait_for_finish():1793] got exit ret: done: true
+exit_result {
+}
+local_info {
+}
+

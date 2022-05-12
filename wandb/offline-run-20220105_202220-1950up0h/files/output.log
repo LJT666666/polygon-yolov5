@@ -1,0 +1,147 @@
+Plotting labels...
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Focus                     [3, 32, 3]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  1    156928  models.common.C3                        [128, 128, 3]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  1    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1    656896  models.common.SPP                       [512, 512, [5, 9, 13]]
+  9                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     26970  models.yolo.Polygon_Detect              [1, [[28, 11, 42, 16, 46, 19], [69, 31, 85, 42, 96, 40], [102, 81, 169, 72, 181, 80]], [128, 256, 512]]
+Model Summary: 283 layers, 7074330 parameters, 7074330 gradients, 16.4 GFLOPs
+Scaled weight_decay = 0.0004921875
+Optimizer groups: 62 .bias, 62 conv.weight, 59 other
+[34m[1mtrain: [39m[22mScanning '../armor293/train' images and labels...:   0%| | 0/293 [00:00<?[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10021.jpg: could not convert string to float: 'None'
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10056.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10064.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10071.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10072.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10079.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10102.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10109.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10116.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10123.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10122.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10149.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10151.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10156.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10157.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10163.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10164.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10171.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10191.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10199.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10206.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10213.jpg: could not convert string to float: 'None'
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10212.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10239.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10238.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10237.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10246.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10252.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10251.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10253.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10259.jpg: could not convert string to float: 'None'
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10267.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10268.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10269.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10272.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10273.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10274.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10271.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10289.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10294.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10288.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10301.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10306.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10307.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10334.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10341.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10346.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10347.jpg: Wrong number of columns at line 2
+/home/zq/PolygonObjectDetection/polygon-yolov5/utils/datasets.py:1628: UserWarning: loadtxt: Empty input file: "../armor293/labels/train/x1red10338.txt"
+  l = np.loadtxt(lb_file, dtype=np.float32)
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10338.jpg: labels require 9 columns each
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10353.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/train/x1red10352.jpg: Wrong number of columns at line 2
+[34m[1mtrain: [39m[22mScanning '../armor293/train' images and labels...293 found, 0 missing, 0
+[34m[1mtrain: [39m[22mNew cache created: ../armor293/train.cache
+[34m[1mtrain: [39m[22mCaching images (0.2GB): 100%|████████| 242/242 [00:00<00:00, 1517.34it/s]
+[34m[1mval: [39m[22mScanning '../armor293/val' images and labels...:   0%| | 0/21 [00:00<?, ?it[34m[1mval: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/val/x1red10071.jpg: Wrong number of columns at line 2
+[34m[1mval: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/val/x1red10079.jpg: Wrong number of columns at line 2
+[34m[1mval: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/val/x1red10123.jpg: Wrong number of columns at line 2
+[34m[1mval: [39m[22mWARNING: Ignoring corrupted image and/or label ../armor293/images/val/x1red10149.jpg: Wrong number of columns at line 2
+[34m[1mval: [39m[22mScanning '../armor293/val' images and labels...21 found, 0 missing, 0 empty
+[34m[1mval: [39m[22mNew cache created: ../armor293/val.cache
+[34m[1mval: [39m[22mCaching images (0.0GB): 100%|█████████████| 17/17 [00:00<00:00, 529.02it/s]
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs/train/exp2
+Starting training for 2000 epochs...
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    0/1999     4.56G    0.5903   0.04696         0    0.6373        11       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    1/1999     6.01G    0.2423   0.04534         0    0.2876        11       640: 100%|█| 12/12 [00:01<00:00,
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|█| 1/1 [00:13<00:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    2/1999     6.01G    0.2279   0.04343         0    0.2713        11       640: 100%|█| 12/12 [00:01<00:00,
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   0%| | 0/1 [00:00<?, ?
+Traceback (most recent call last):
+  File "polygon_train.py", line 551, in <module>
+    train(hyp, opt, device, tb_writer, polygon=opt.polygon)
+  File "polygon_train.py", line 364, in train
+    results, maps, _ = test.test(data_dict,
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/zq/PolygonObjectDetection/polygon-yolov5/polygon_test.py", line 137, in test
+    out = polygon_non_max_suppression(out, conf_thres, iou_thres, labels=lb, multi_label=True, agnostic=False)
+  File "/home/zq/PolygonObjectDetection/polygon-yolov5/utils/general.py", line 1049, in polygon_non_max_suppression
+    i = polygon_nms_kernel(x, iou_thres)  # polygon-NMS
+  File "/home/zq/PolygonObjectDetection/polygon-yolov5/utils/general.py", line 1079, in polygon_nms_kernel
+    x[:, :8] = order_corners(x[:, :8])
+  File "/home/zq/PolygonObjectDetection/polygon-yolov5/utils/general.py", line 1114, in order_corners
+    x_sorted[i] = x[i, y_indices[i]]
+KeyboardInterrupt
+Exception in thread Thread-22:
+Traceback (most recent call last):
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/multiprocessing/queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/multiprocessing/reductions.py", line 289, in rebuild_storage_fd
+    fd = df.detach()
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/multiprocessing/connection.py", line 502, in Client
+    c = SocketClient(address)
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/multiprocessing/connection.py", line 630, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory

@@ -1,0 +1,4 @@
+torch>=1.0.0a0
+torchvision
+pillow
+requests

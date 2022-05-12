@@ -1,0 +1,217 @@
+Plotting labels...
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17    0.00037     0.0588   4.06e-05   4.06e-06
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17    0.00362     0.0588    0.00068   0.000151
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.264      0.235     0.0709     0.0224
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.333      0.118     0.0498      0.023
+WARNING: NMS time limit 10.0s exceeded
+                 all         17          0          0          0          0          0
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17     0.0269      0.118    0.00632    0.00148
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.158      0.176     0.0384     0.0102
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.106      0.353     0.0548     0.0172
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.497     0.0588     0.0412     0.0133
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.493      0.176      0.157     0.0317
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.333      0.176     0.0879     0.0234
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17       0.66      0.353      0.303     0.0746
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.461      0.353      0.205     0.0485
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.272      0.176     0.0894     0.0103
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.266      0.235      0.141     0.0466
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17        0.6      0.353      0.282     0.0517
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.667      0.353      0.335     0.0846
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.991      0.235      0.294     0.0469
+WARNING: NMS time limit 10.0s exceeded
+                 all         17         17      0.258      0.471      0.239     0.0315
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Focus                     [3, 32, 3]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  1    156928  models.common.C3                        [128, 128, 3]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  1    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1    656896  models.common.SPP                       [512, 512, [5, 9, 13]]
+  9                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     26970  models.yolo.Polygon_Detect              [1, [[28, 11, 42, 16, 46, 19], [69, 31, 85, 42, 96, 40], [102, 81, 169, 72, 181, 80]], [128, 256, 512]]
+Model Summary: 283 layers, 7074330 parameters, 7074330 gradients, 16.4 GFLOPs
+Scaled weight_decay = 0.000625
+Optimizer groups: 62 .bias, 62 conv.weight, 59 other
+[34m[1mtrain: [39m[22mScanning '../armor293/train.cache' images and labels... 293 found, 0 miss
+[34m[1mtrain: [39m[22mCaching images (0.2GB): 100%|████████| 242/242 [00:00<00:00, 1905.01it/s]
+[34m[1mval: [39m[22mScanning '../armor293/val.cache' images and labels... 21 found, 0 missing,
+[34m[1mval: [39m[22mCaching images (0.0GB): 100%|█████████████| 17/17 [00:00<00:00, 620.97it/s]
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs/train/exp3
+Starting training for 2000 epochs...
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    0/1999     5.77G    0.6458   0.04783         0    0.6936         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    1/1999     9.09G    0.3988   0.04673         0    0.4455         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    2/1999     9.12G    0.2442   0.04458         0    0.2888         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    3/1999     9.12G    0.2136     0.043         0    0.2566         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    4/1999     9.12G    0.1954   0.04215         0    0.2375         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    5/1999     9.12G    0.1951   0.04123         0    0.2363         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    6/1999     9.12G    0.1779    0.0404         0    0.2183         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    7/1999     9.12G    0.1735   0.03966         0    0.2132         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    8/1999     9.12G    0.1697   0.03994         0    0.2096         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    9/1999     9.12G    0.1675   0.03944         0    0.2069         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   10/1999     9.12G    0.1487   0.03961         0    0.1883         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   11/1999     9.12G    0.1462   0.03929         0    0.1855         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   12/1999     9.12G    0.1433   0.03876         0    0.1821         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   13/1999     9.12G    0.1274   0.03853         0     0.166         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   14/1999     9.12G    0.1411   0.03833         0    0.1794         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   15/1999     9.12G    0.1358    0.0371         0    0.1729         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   16/1999     9.12G    0.1269    0.0371         0     0.164         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   17/1999     9.12G    0.1255   0.03686         0    0.1623         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   18/1999     9.12G    0.1493   0.03705         0    0.1863         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   19/1999     9.12G    0.1165   0.03584         0    0.1524         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   20/1999     9.12G    0.1115   0.03541         0     0.147         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   21/1999     9.12G    0.1166   0.03462         0    0.1512         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   22/1999     9.12G    0.1211   0.03369         0    0.1547         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   23/1999     9.12G    0.1189   0.03213         0     0.151         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   24/1999     9.12G    0.1099   0.03142         0    0.1413         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   25/1999     9.12G    0.1023   0.02846         0    0.1308         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   26/1999     9.12G    0.1155   0.02701         0    0.1425         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   27/1999     9.12G    0.1147   0.02546         0    0.1402         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   28/1999     9.12G    0.1164   0.02287         0    0.1393         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   29/1999     9.12G     0.114   0.02254         0    0.1366         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   30/1999     9.12G    0.1177   0.02063         0    0.1383         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   31/1999     9.12G    0.1076   0.01899         0    0.1266         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   32/1999     9.12G    0.1177   0.01821         0    0.1359         2       640
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   33/1999     9.12G    0.1146   0.01661         0    0.1312        40       640
+Traceback (most recent call last):
+  File "polygon_train.py", line 551, in <module>
+    train(hyp, opt, device, tb_writer, polygon=opt.polygon)
+  File "polygon_train.py", line 323, in train
+    scaler.step(optimizer)  # optimizer.step
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 338, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 284, in _maybe_opt_step
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+  File "/home/zq/.conda/envs/yolo/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 284, in <genexpr>
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+KeyboardInterrupt
